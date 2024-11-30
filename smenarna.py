@@ -5,7 +5,7 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
 import requests
-import pickle  # for saving checkbox state
+import pickle  
 
 class MyEntry(tk.Entry):
     def __init__(self, master=None, cnf={}, **kw):
