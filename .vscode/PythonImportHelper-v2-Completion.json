@@ -1,0 +1,79 @@
+[
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "MyEntry",
+        "kind": 6,
+        "importPath": "smenarna",
+        "description": "smenarna",
+        "peekOfCode": "class MyEntry(tk.Entry):\n    def __init__(self, master=None, cnf={}, **kw):\n        super().__init__(master, cnf, **kw)\n        if \"textvariable\" not in kw:\n            self.variable = tk.StringVar()\n            self.config(textvariable=self.variable)\n        else:\n            self.variable = kw[\"textvariable\"]\n    @property\n    def value(self):",
+        "detail": "smenarna",
+        "documentation": {}
+    },
+    {
+        "label": "Application",
+        "kind": 6,
+        "importPath": "smenarna",
+        "description": "smenarna",
+        "peekOfCode": "class Application(tk.Tk):\n    name = \"Směnárna\"\n    filename = \"kurzovni_listek.txt\"\n    settings_file = \"settings.pickle\"  \n    def __init__(self):\n        super().__init__(className=self.name)\n        self.title(self.name)\n        self.bind(\"<Escape>\", self.quit)\n        self.lbl = tk.Label(self, text=\"Směnárna\")\n        self.lbl.pack()",
+        "detail": "smenarna",
+        "documentation": {}
+    }
+]
